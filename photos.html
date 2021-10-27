@@ -31,10 +31,11 @@ layout: nothing
         <!-- Thumbnail -->
         <section id="thumbnails">
             {% for image in site.static_files %}
-	    {% if pho.path contains 'tos' %}
+	    {% if image.path contains 'photographie' %}
             <article>
                 <a class="thumbnail" href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" data-position="left center">
                     <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" alt="{{ image.name }}">
+		    <p>par Lynn H.</p>
 		</a>
             </article>
             {% endif %}
