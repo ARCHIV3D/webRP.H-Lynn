@@ -31,7 +31,7 @@ layout: nothing
         <!-- Thumbnail -->
         <section id="thumbnails">
             {% for image in site.static_files %}
-	    {% if site.image_loc.path contains 'tos' %}
+	    {% if pho.path contains 'tos' %}
             <article>
                 <a class="thumbnail" href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" data-position="left center">
                     <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" alt="{{ image.name }}">
