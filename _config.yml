@@ -1,1 +1,1 @@
-exclude: ['*.md', 'CNAME', '.customPath', '*.code-workspace']
+exclude: ['*.md', 'CNAME', '.customPath', '*.code-workspace', '.htaccess']
