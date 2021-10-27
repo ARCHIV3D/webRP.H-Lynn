@@ -2,5 +2,6 @@ exclude: ['*.md', 'CNAME', '.customPath', '*.code-workspace', '.htaccess']
 gems:
   - jekyll-auto-image
 
+baseurl: "https://hlynn.cf"
 image_fulls_loc: "/_photos/fulls"
 image_thumbs_loc: "/_photos/thumbs"
