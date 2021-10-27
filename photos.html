@@ -31,10 +31,10 @@ layout: nothing
         <!-- Thumbnail -->
         <section id="thumbnails">
             {% for image in site.static_files %}
-            {% if image.path contains 'fulls' %}
+            {% if site.image_loc contains 'tos' %}
             <article>
                 <a class="thumbnail" href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" data-position="left center">
-                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt="{{ image.name }}">
+                    <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" alt="{{ image.name }}">
                 </a>
                 <!--<a class="thumbnail" href="/_photos/fulls/01.jpg" data-position="left center"><img src="/_photos/thumbs/01.jpg" alt="" /></a>-->
                 <!--<h2>Diam tempus accumsan</h2>
