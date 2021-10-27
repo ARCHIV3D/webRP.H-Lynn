@@ -1,1 +1,3 @@
 exclude: ['*.md', 'CNAME', '.customPath', '*.code-workspace', '.htaccess']
+gems:
+  - jekyll-auto-image
