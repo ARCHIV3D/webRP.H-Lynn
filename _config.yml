@@ -4,3 +4,4 @@ gems:
 
 baseurl: "https://hlynn.cf"
 image_fulls_loc: "/pho/tos"
+image_loc: "/pho"
