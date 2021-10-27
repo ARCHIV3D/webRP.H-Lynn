@@ -33,8 +33,8 @@ layout: nothing
             {% for image in site.static_files %}
 	    {% if image.path contains 'photographie' %}
             <article>
-                <a class="thumbnail" href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" data-position="left center">
-                    <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" alt="{{ image.name }}">
+                <a class="thumbnail" href="{{ site.image_fulls_loc }}/{{ image.name }}" data-position="left center">
+                    <img src="{{ site.image_fulls_loc }}/{{ image.name }}" alt="{{ image.name }}">
 		    <p>par Lynn H.</p>
 		</a>
             </article>
