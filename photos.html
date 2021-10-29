@@ -1,56 +1,56 @@
 ---
-layout: nothing
+layout: nab-web
+title: Photographie −
+css: 2
+bodyclass: is-preload-0 is-preload-1 is-preload-2
 ---
-
-<!DOCTYPE HTML>
-<!--
-	Code by hlynn.cf | @HLynn
-	Based on Lens by html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Photographie − Lynn H.</title>
-		<meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="/assets/img/favicon/001.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/assets/css/02.css" />
-		<noscript><link rel="stylesheet" href="/assets/css/02.noscript.css" /></noscript>
-	</head>
-<body class="is-preload-0 is-preload-1 is-preload-2">
-    <!-- Main -->
 	<div id="main">
-		<!-- Header -->
     	<header id="header">
-			<h1>L Y N N</h1>
-			<p><< <a href="/" rel="noopener" title="Accueil">Retournez a la page d'accueil</a></p>
-			<ul class="icons">
-				<li><a href="https://lifeinvader.gtrp.co/HLynn" title="Life Invader (Nouvelle Page)" target="_blank" rel="noopener" class="icon brands"><img src="/assets/img/life.png" width="40" height="40" draggable="false" alt="life invader"></a></li>
-			</ul>
+			<h1>{{ site.nname }}</h1>
 		</header>
-        <!-- Thumbnail -->
         <section id="thumbnails">
-            {% for image in site.static_files %}
-	    {% if image.path contains 'photographie' %}
+            {% for image in site.static_files %}{% if image.path contains 'photographie' %}
             <article>
-                <a class="thumbnail" href="{{ site.image_fulls_loc }}/{{ image.name }}" data-position="left center">
-                    <img src="{{ site.image_fulls_loc }}/{{ image.name }}" alt="{{ image.name }}">
-		</a>
-		<p>par Lynn H.</p>
+                <a class="thumbnail" href="{{ site.imgchar }}/{{ image.name }}" data-position="left center">
+                    <img src="{{ site.imgchar }}/{{ image.name }}" alt="{{ image.name }}" draggable="false">
+				</a>
+				<p>par {{ site.aname }}</p>
             </article>
-            {% endif %}
-            {% endfor %}
+            {% endif %}{% endfor %}
         </section>
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="copyright">
-                <li><span class="f first">2021 &copy; Lynn H. Tous droits réservés</span> <br>Basé sur des créations de Html5Up remodelé & optimisé par Lynn H.</li>
-            </ul>
-        </footer>
-<!-- Scripts -->
+		<div class="nab-bubble nab-center">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+			  <defs>
+				<filter id="goo">
+				  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+				  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+				  <feComposite in="SourceGraphic" in2="goo"/>
+				</filter>
+			  </defs>
+			</svg>
+			<span class="button--bubble__container">
+			  <a href="/" rel="noopener" title="Retournez a l'accueil" class="button button--bubble">
+				Retournez a l'accueil
+			  </a>
+			  <span class="button--bubble__effect-container">
+				<span class="circle top-left"></span>
+				<span class="circle top-left"></span>
+				<span class="circle top-left"></span>
+				<span class="button effect-button"></span>
+				<span class="circle bottom-right"></span>
+				<span class="circle bottom-right"></span>
+				<span class="circle bottom-right"></span>
+			  </span>
+			</span>
+		</div>
+	</div>
+	<!-- C'est un peu beaucoup la >< !-->
 <script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/TweenLite.min.js"></script>
+<script src="/assets/js/TimelineLite.min.js"></script>
+<script src="/assets/js/CSSPlugin.min.js"></script>
+<script src="/assets/js/EasePack.min.js"></script>
+<script src="/assets/js/nab-bubble.js"></script>
 <script src="/assets/js/browser.min.js"></script>
 <script src="/assets/js/breakpoints.min.js"></script>
 <script src="/assets/js/02.main.js"></script>
-</body>
-</html>

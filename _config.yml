@@ -1,6 +1,9 @@
-exclude: ['*.md', 'CNAME', '.customPath', '*.code-workspace', '.htaccess']
+exclude: ['*.md', 'CNAME', '.customPath', '*.code-workspace', 'Gemfile', 'Gemfile.lock', '.bundle/*.*', '.jekyll-cache/*.*', 'true']
 gems:
   - jekyll-auto-image
+  - jekyll-sitemap
 
-baseurl: "https://hlynn.cf"
-image_fulls_loc: "/images/photographie"
+nname: "L Y N N"
+aname: "Lynn H."
+imgchar: "/images/photographie"
+lifeinvader: "https://lifeinvader.gtrp.co/HLynn"

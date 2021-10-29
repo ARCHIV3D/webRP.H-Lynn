@@ -1,54 +1,17 @@
-<!DOCTYPE HTML>
-<!--
-	Code by hlynn.cf | @HLynn
-	Based on Hyperspace by html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
---> 
-<html>
-	<head>
-		<title>Lynn H.</title>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/png" href="/assets/img/favicon/001.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="/assets/css/01.css" />
-		<noscript><link rel="stylesheet" href="/assets/css/01.noscript.css" /></noscript>
-	</head>
-<body>
-	<!-- Sidebar -->
-	<section id="sidebar">
-		<div class="inner">
-			<nav>
-				<ul>
-					<li><a href="/" rel="noopener" class="a active" title="Accueil">Accueil</a></li>
-					<li><a href="/photos" rel="noopener" class="a" title="Photographie">Photographie</a></li>
-					<br>
-					<div>
-						<a href="https://lifeinvader.gtrp.co/HLynn" rel="noopener" class="a-nothing" target="_blank" title="Profil Life Invader (Nouvelle Page)"><img src="/assets/img/life.png" height="40" width="40" draggable="false" alt="life invader"></a>
-					</div>
-				</ul>
-			</nav>
-		</div>
-	</section>
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<!-- Intro -->
-		<div class="view bg-01">
-			<section id="intro" class="wrapper fullscreen fade-up">
-				<div class="inner">
-					<h1>L Y N N</h1>
-					<p>nous sommes tous des êtres uniques, <br> alors pourquoi nous ranger dans des conditions ?</p>
-				</div>
-			</section>
+---
+layout: nab-web
+css: nab-home
+bodyclass: view bg
+---
+	<div class="nab-fixedC">
+		<div class="nab-fixed nab-view nab-fixedContent">
+			<img src="assets/img/PP.jpg" draggable="false" alt="avatar de {{ site.aname }}" width="150" height="150" class="nab-logo">
+			<h1 class="nab-title">{{ site.nname }}</h1>
+			<div class="nab-links">
+				<a href="/photos" rel="noopener" class="btn btn-p btn-lg lnk" title="Photographie">Photographie</a>
+				<a href="{{ site.lifeinvader }}" rel="noopener" target="_blank" class="btn btn-p btn-lg lnk" title="Life Invader">Life Invader</a>
+			</div>
 		</div>
 	</div>
-	<!-- Footer -->
-	<footer id="footer" class="wrapper style1-alt">
-		<div class="inner">
-			<ul class="menu">
-				<li class="f first">2021 &copy; Lynn H. Tous droits réservés</li>
-				<li>Basé sur des créations de Html5Up remodelé & optimisé par Lynn H.</li>
-			</ul>
-		</div>
-	</footer>
 </body>
 </html>

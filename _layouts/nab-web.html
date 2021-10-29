@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<!--
+	Code by hlynn.cf | HRP: NotABoy (Lou) | RP: {{ site.aname }}
+--> 
+    <!-- @layouts -->
+<html>
+	<head>
+		<title>{{ page.title }} {{ site.aname }}</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/assets/img/favicon/001.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/nab-requirement.css" />
+		<link rel="stylesheet" href="/assets/css/{{ page.css }}.css" />
+	</head>
+    <body class="{{ page.bodyclass }}">
+    <!-- @content -->
+{{ content }}
+    {% include made-in-lynn.html %}
+    </body>
+</html>
