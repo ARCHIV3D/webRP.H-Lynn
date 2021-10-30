@@ -3,12 +3,15 @@
 	Code by hlynn.cf | HRP: NotABoy (Lou) | RP: {{ site.aname }}
 --> 
     <!-- @layouts -->
-<html>
+<html prefix="og: https://ogp.me/ns#" lang="fr-FR">
 	<head>
-		<title>{{ page.title }} {{ site.aname }}</title>
+	<!-- @meta-seo -->
 		<meta charset="utf-8" />
+		<title>{{ page.title }}{{ site.aname }}</title>
+{% include meta-seo.html %}
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />	
 		<link rel="icon" type="image/png" href="/assets/img/favicon/001.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- @css-js -->
 		<link rel="stylesheet" href="/assets/css/nab-requirement.css" />
 		<link rel="stylesheet" href="/assets/css/{{ page.css }}.css" />
 		<script src="/assets/js/jquery.min.js"></script>
