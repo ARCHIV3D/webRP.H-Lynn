@@ -5,11 +5,12 @@ css: nab-photos
 bodyclass: is-preload-0 is-preload-1 is-preload-2
 ---
     <section id="thumbnails">
-        {% for image in site.static_files %}{% if image.path contains 'photographie' %}
+        {% assign sorted = site.static_files | sort: 'date' | reverse %}{% for image in sorted %}{% if image.path contains 'photographie' %}
             <article>
                 <a class="thumbnail" href="{{ site.imgchar }}/{{ image.name }}" data-position="left center">
                     <img src="{{ site.imgchar }}/{{ image.name }}" alt="{{ image.name }}" draggable="false">
 				</a>
+                <p><a href="{{ site.imgchar }}/{{ image.name }}" rel="noopener" target="_blank" title="Nouvelle Page" class="nab-openImg">ouvrir l'image en plein écran</a></p>
 				<p>par {{ site.aname }}</p>
             </article>
         {% endif %}{% endfor %}

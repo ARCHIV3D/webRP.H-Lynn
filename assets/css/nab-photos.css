@@ -330,5 +330,8 @@ body.is-preload-2 #viewer .slide {
     display: block !important;
     content: "" !important;
     position: fixed !important;
-    background-size: 100% 100% !important;
+}
+.nab-openImg {
+    color: white;
+    text-decoration: none;
 }
