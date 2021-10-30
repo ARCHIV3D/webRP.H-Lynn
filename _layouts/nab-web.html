@@ -11,10 +11,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/nab-requirement.css" />
 		<link rel="stylesheet" href="/assets/css/{{ page.css }}.css" />
+		<script src="/assets/js/jquery.min.js"></script>
 	</head>
-    <body class="{{ page.bodyclass }}">
+<body class="{{ page.bodyclass }}">
+	<!-- @navbar -->
+{% include navbar.html %}
+	<!-- @made-in-lynn -->
+{% include made-in-lynn.html %}
     <!-- @content -->
 {{ content }}
-    {% include made-in-lynn.html %}
-    </body>
+</body>
 </html>
